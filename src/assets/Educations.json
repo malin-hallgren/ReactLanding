@@ -1,0 +1,19 @@
+{
+    "educations": [
+        {
+            "title": "Fullstack Devlopment in .NET/C# @ Chas Academy",
+            "description": "Studied fullstack development in .NET/C#"
+        },
+        {
+            "title": "Concept Art and Illustration Fundamentals @ Hjo Konstskola",
+            "description": "Studied fundamentals of art and art theory for entertainment media."
+        },
+        {
+            "title": "Indie Games Development @ Valla Game Education",
+            "description": "Studied programming, design, art and narrative for games."
+        },
+        {
+            "title": "Term 1 of Visual Arts Digital Design @ Luleå Tekniska Universitetet"
+        }
+    ]
+}

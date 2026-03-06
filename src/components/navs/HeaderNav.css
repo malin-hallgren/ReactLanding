@@ -1,0 +1,28 @@
+.header-nav ul {
+    list-style: none;   
+    display: flex;
+    gap: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav ul li a {
+    color: var(--color-text);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-nav ul li a:hover {
+    color: var(--color-text-highlight);
+}
+
+.header-nav ul li a.active {
+    color: var(--color-text-link-active);
+}
+
+@media (max-width: 768px) {
+    .header-nav ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

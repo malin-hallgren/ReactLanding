@@ -1,0 +1,39 @@
+.card {
+    border-radius: 10px;
+    padding: 5% 7%;
+    background-color: var(--color-container-bg-2);
+    max-width: 100%;
+    min-height: 20rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.card ul {
+    margin-left: -1.2rem;
+}
+
+.card ul li {
+    margin-top: 0.4rem;
+    padding-left: 1rem;
+}
+
+.card h3 {
+    margin-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-card-border);
+    text-align: center;
+}
+
+#modal-button {
+    margin-left: -0.5rem;
+    border: none;
+    background-color: transparent;
+    color: var(--color-text-highlight);
+    font-weight: bold;
+    font-family: "Arvo", serif;
+    font-size: 0.9rem;
+}
+
+#modal-button:hover {
+    cursor: pointer;
+}

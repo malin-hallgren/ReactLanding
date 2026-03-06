@@ -1,0 +1,31 @@
+.experience-card {
+    border-radius: 10px;
+    padding: 5% 7%;
+    background-color: var(--color-container-bg-2);
+    max-width: 100%;
+    min-height: 20rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.experience-card ul {
+    margin-left: -1.2rem;
+}
+
+.experience-card ul li {
+    margin-top: 0.4rem;
+    padding-left: 1rem;
+}
+
+.experience-card h3 {
+    margin-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-card-border);
+    text-align: center;
+}
+
+.experience-card blockquote {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    font-style: italic;
+}

@@ -1,0 +1,37 @@
+.small-card {
+    position: relative;
+    border-radius: 10px;
+    padding: 5% 7%;
+    background-color: var(--color-container-bg-2);
+    max-width: 100%;
+    min-height: 20rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.small-card h3 {
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-card-border);
+}
+
+.project-stats {
+    position: absolute;
+    bottom: 1.5rem;
+    text-align: center;
+    justify-self: center;
+}
+
+.small-card a {
+    font-weight: bold;
+    color: var(--color-text-highlight);
+    transition: color 0.3s ease;
+}
+
+.small-card a:hover {
+    color: var(--color-text-link-hover);
+}
+
+.small-card a:active {
+    color: var(--color-text-link-active);
+}

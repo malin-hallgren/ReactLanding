@@ -1,0 +1,41 @@
+.large-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    padding: 2% 2%;
+    width: min(78.5rem, 100%);
+    border-radius: 25px;
+    background-color: var(--color-container-bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 3rem;;
+}
+
+.large-card p {
+    white-space: pre-line;
+}
+
+#profile-picture  {
+    width: 10rem;
+    max-width: 100%;
+    border-radius: 50%;
+    display: inline;
+    box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 10rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .large-card  {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #profile-picture {
+        margin: 0 auto 2rem;
+    }
+    
+}

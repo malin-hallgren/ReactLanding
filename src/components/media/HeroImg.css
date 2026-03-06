@@ -1,0 +1,10 @@
+.hero-image {
+    margin: 2rem 0;
+    max-width: 78.5rem;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
