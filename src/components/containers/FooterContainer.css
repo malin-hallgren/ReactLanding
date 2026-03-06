@@ -8,10 +8,18 @@
     gap: 1.5rem;
 }
 
-.footer .header-nav--footer ul li a {
+.footer .header-nav--footer ul li .nav-link {
     color: var(--color-footer-nav);
 }
 
-.footer .header-nav--footer ul li a:hover {
+.footer .header-nav--footer ul li .nav-link:hover {
     color: var(--color-text-highlight);
+}
+
+.footer .header-nav--footer ul li .nav-link:active {
+    color: var(--color-text-link-active);
+}
+
+.footer {
+    margin-top: 2rem;
 }
