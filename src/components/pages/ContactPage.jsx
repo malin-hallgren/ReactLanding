@@ -1,4 +1,5 @@
 import LargeCard from '../cards/LargeCard';
+import FormContainer from '../containers/FormContainer';
 
 
 export default function Contact() {
@@ -11,6 +12,7 @@ export default function Contact() {
                     `The below contact form is NOT functional yet, please do not attempt to contact me that way :')`
                 }
             />
+            <FormContainer />
         </>
     );
 }

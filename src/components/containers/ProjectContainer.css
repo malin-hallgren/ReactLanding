@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
     padding: 2% 2%;
-    width: min(78.5rem, 100%);
+    width: min(120rem, 100%);
     border-radius: 25px;
     background-color: var(--color-container-bg);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);

@@ -6,7 +6,6 @@
   font-family: "Arvo", serif;
   line-height: 1.5;
   font-weight: 400;
-  margin-left: 1rem;
 
   /* color-scheme: light dark; */
 
@@ -37,6 +36,40 @@
   color: var(--color-text);
 }
 
+/* :root .light {
+
+} */
+
+:root .dark {
+  --color-bg: #414141;
+  --color-text: #c9c9c9;
+  --color-container-bg: #595959;
+  --color-container-bg-2: #6c6c6c;
+  --color-card-border: #7c7c7c;
+  --color-footer-nav: #696969;
+  --color-footer-text: #818181;
+  --color-logo-border-header: #868686;
+  --color-submit-button-bg-disabled: #696969;
+  --color-submit-button-bg: #818181;
+  --color-submit-button-text-disabled: #818181;
+  --color-submit-button-text: #ededed;
+  --color-figcaption: #555555;
+
+  --color-text-highlight: #ff7b1c;
+  --color-text-link-active: #f07924;
+  --color-text-link-hover: #ff9447;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: min(120rem, calc(100% - 2rem));
+  margin: 1.5rem auto;
+}
+
 a {
   text-decoration: none;
   color: var(--color-text-highlight)
@@ -45,7 +78,7 @@ a {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  max-width: 78.5rem;
+  max-width: 120rem;
   font-family: "Michroma", sans-serif;
   text-shadow: 2px 2px 4px rgb(0, 0 , 0, 0.2);
 }
@@ -70,9 +103,7 @@ button:focus-visible {
 }
 
 @media (max-width: 768px) {
-  :root {
-    margin: auto;
-  }
+  
 }
 
 /* @media (prefers-color-scheme: light) {
