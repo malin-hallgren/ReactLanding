@@ -1,7 +1,10 @@
 import './ContactForm.css';
+import {useState} from 'react';
 
 
 export default function ContacForm() {
+    const [isChecked, setIsChecked] = useState(false);
+
     return (
         <>
             <form className='contact-form'>
@@ -15,10 +18,11 @@ export default function ContacForm() {
                 </section>
                 <section className='checkbox-field'>
                     <label htmlFor="form-not-functional">I understand that this form is NOT functional:</label>
-                    <input type="checkbox" id="form-not-functional" name="form-not-functional" required />
+                    <input type="checkbox" id="form-not-functional" name="form-not-functional" required 
+                        checked={isChecked} onChange={(e) => setIsChecked(e.target.checked)}/>
                 </section>
 
-                <input className="submit" type="submit" value="Submit" />
+                <input className={`submit ${isChecked ? 'enabled' : 'disabled'}`} disabled={!isChecked} type="submit" value="Submit" />
             </form>
 
         </>

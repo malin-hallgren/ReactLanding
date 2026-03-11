@@ -7,10 +7,6 @@
     justify-content: center;
 }
 
-/* .contact-form .contact-field {
-    justify-self: center;
-} */
-
 .contact-form .contact-field label, .contact-form .checkbox-field label {
     margin-bottom: 0.5rem;
     font-weight: bold;
@@ -52,12 +48,24 @@
     color: var(--color-submit-button-text);
     border: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform, ease, 0.7;
+    transition: transform, 0.7, ease;
     cursor: pointer;
 }
 
 .submit:hover {
     transform: scale(1.01);
+}
+
+.submit:disabled {
+    background-color: var(--color-submit-button-bg-disabled);
+    color: var(--color-submit-button-text-disabled);
+    cursor: not-allowed;
+    box-shadow: none;
+    transition: none;
+}
+
+.submit:disabled:hover {
+    transform: scale(1);
 }
 
 
