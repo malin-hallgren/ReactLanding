@@ -1,0 +1,30 @@
+#hello-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: var(--color-text);
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    visibility: hidden;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
+#hello-popup.show {
+    visibility: visible;
+}
+
+#close-hello {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+}

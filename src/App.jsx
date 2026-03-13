@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import HeaderContainer from './components/containers/HeaderContainer';
 import HeroContainer from './components/containers/HeroContainer';
 import Footer from './components/containers/FooterContainer.jsx';
+import Hello from './components/eastereggs/HelloPopup.jsx';
 import Home from './components/pages/HomePage.jsx';
 import Portfolio from './components/pages/PortfolioPage.jsx';
 import About from './components/pages/AboutPage.jsx';
@@ -26,6 +27,7 @@ export default function App() {
       <HeaderContainer theme={theme} />
       <HeroContainer theme={theme} setTheme={setTheme} />
       <main>
+        <Hello />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
