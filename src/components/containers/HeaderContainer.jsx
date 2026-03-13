@@ -1,7 +1,7 @@
 import HeaderNav from "../navs/HeaderNav";
 import './HeaderContainer.css';
-import LogoDark from '../../assets/LogoDark.png';
-import LogoLight from '../../assets/LogoLight.png';
+import LogoDark from '../../assets/LogoDark.svg';
+import LogoLight from '../../assets/LogoLight.svg';
 
 export default function HeaderContainer({ theme }) {
     const logo = theme === 'dark' ? LogoDark : LogoLight;
