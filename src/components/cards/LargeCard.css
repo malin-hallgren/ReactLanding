@@ -18,6 +18,11 @@
     white-space: pre-line;
 }
 
+.large-card a {
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
 #profile-picture  {
     position: absolute;
     right: 10rem;

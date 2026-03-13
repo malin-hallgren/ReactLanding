@@ -25,13 +25,14 @@
 }
 
 #modal-button {
-    margin-left: -0.5rem;
+    margin: 2rem auto;
+    display: block;
     border: none;
     background-color: transparent;
     color: var(--color-text-highlight);
     font-weight: bold;
     font-family: "Arvo", serif;
-    font-size: 0.9rem;
+    font-size:1.05rem;
 }
 
 #modal-button:hover {

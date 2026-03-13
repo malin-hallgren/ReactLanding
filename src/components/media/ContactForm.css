@@ -19,7 +19,7 @@
     border-radius: 5px;
     font-size: 1rem;
     font-family: "Arvo", serif;
-    background-color: var(--color-footer-nav);
+    background-color: var(--color-form-fields);
     color: var(--color-submit-button-text);
 }
 

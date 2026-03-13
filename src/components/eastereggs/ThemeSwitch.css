@@ -1,0 +1,37 @@
+.theme-button.dark {
+    background-color: transparent;
+    position: absolute;
+    right: 22.5%;
+    top: 16%;
+    border: none;
+    height: 18%;
+    width: 7.5%;
+}
+
+.theme-button.light {
+    background-color: transparent;
+    position: absolute;
+    right: 22.5%;
+    top: 17%;
+    border: none;
+    height: 18%;
+    width: 7.5%;
+}
+
+.theme-button.dark, .theme-button.light:active {
+    cursor: pointer;
+    border: none;
+}
+
+.theme-button.dark:focus,
+.theme-button.light:focus
+{
+    outline: none;
+    border: none;
+}
+
+.theme-button.dark:focus-visible,
+.theme-button.light:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+    border: none;
+}

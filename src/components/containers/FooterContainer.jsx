@@ -5,12 +5,12 @@ export default function FooterContainer() {
 
     return (
         <>
-            <div className="footer">
+            <footer className="footer">
 
                 <p>&copy; Malin Hallgren 2026</p>
                 <Nav variant="footer" />
 
-            </div>
+            </footer>
         </>
     );
 }

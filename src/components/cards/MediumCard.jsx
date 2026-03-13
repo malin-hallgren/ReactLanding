@@ -8,8 +8,8 @@ export default function MediumCard({ title, bulletPoints = [], project, onOpenMo
                 {bulletPoints.map((point, i) => (
                     <li key={i}>{point}</li>
                 ))}
-                <li><button id="modal-button" type="button" onClick={() => onOpenModal(project)}>Click for more information</button></li>
             </ul>
+            <button id="modal-button" type="button" onClick={() => onOpenModal(project)}>Click for more information</button>
         </div>
 
     );

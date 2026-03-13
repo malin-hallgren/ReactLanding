@@ -1,0 +1,6 @@
+.hero-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 120rem;
+}

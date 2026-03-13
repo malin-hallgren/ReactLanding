@@ -7,57 +7,58 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* color-scheme: light dark; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-bg: #414141;
-  --color-text: #c9c9c9;
-  --color-container-bg: #595959;
-  --color-container-bg-2: #6c6c6c;
-  --color-card-border: #7c7c7c;
-  --color-footer-nav: #696969;
-  --color-footer-text: #818181;
-  --color-logo-border-header: #868686;
-  --color-submit-button-bg-disabled: #696969;
-  --color-submit-button-bg: #818181;
-  --color-submit-button-text-disabled: #818181;
-  --color-submit-button-text: #ededed;
-  --color-figcaption: #555555;
-
   --color-text-highlight: #ff7b1c;
   --color-text-link-active: #f07924;
-  --color-text-link-hover: #ff9447;
+  --color-text-link-hover: #ff9447; 
 
   background-color: var(--color-bg);
   color: var(--color-text);
 }
 
-/* :root .light {
+:root.light {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-container-bg: #F5F5F5;
+  --color-container-bg-2: #ffffff;
+  --color-card-border: #d1d1d1;
+  --color-footer-nav: #6e6e6e;
+  --color-footer-text: #6e6e6e;
+  --color-logo-border-header: #aaaaaa;
+  --color-submit-button-bg-disabled: #cbcbcb;
+  --color-submit-button-bg: #ffffff;
+  --color-submit-button-text-disabled: #e4e4e4;
+  --color-submit-button-text: #000000;
+  --color-figcaption: #d1d1d1;
+  --color-form-fields: #ffffff;
 
-} */
+  --color-text-highlight: #9E4300;
+  --color-text-link-active: #B34C00;
+  --color-text-link-hover: #B34D00; 
+}
 
-:root .dark {
-  --color-bg: #414141;
+:root.dark {
+  --color-bg: #303030;
   --color-text: #c9c9c9;
-  --color-container-bg: #595959;
-  --color-container-bg-2: #6c6c6c;
+  --color-container-bg: #393939;
+  --color-container-bg-2: #424242;
   --color-card-border: #7c7c7c;
-  --color-footer-nav: #696969;
-  --color-footer-text: #818181;
+  --color-footer-nav: #c0c0c0;
+  --color-footer-text: #c5c5c5;
   --color-logo-border-header: #868686;
-  --color-submit-button-bg-disabled: #696969;
+  --color-submit-button-bg-disabled: #4D4D4D;
   --color-submit-button-bg: #818181;
   --color-submit-button-text-disabled: #818181;
   --color-submit-button-text: #ededed;
-  --color-figcaption: #555555;
+  --color-form-fields: #4D4D4D;
 
-  --color-text-highlight: #ff7b1c;
-  --color-text-link-active: #f07924;
-  --color-text-link-hover: #ff9447;
+  --color-text-highlight: #FF974D;
+  --color-text-link-active: #FFA05C;
+  --color-text-link-hover: #FFA05C; 
 }
 
 html, body, #root {

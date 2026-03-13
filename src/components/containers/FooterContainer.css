@@ -10,6 +10,8 @@
 
 .footer .header-nav--footer ul li .nav-link {
     color: var(--color-footer-nav);
+    font-weight: 100;
+    font-size: small;
 }
 
 .footer .header-nav--footer ul li .nav-link:hover {

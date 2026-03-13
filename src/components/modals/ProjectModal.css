@@ -32,6 +32,11 @@
     border: 0;
 }
 
+figcaption {
+    color: var(--color-text);
+    font-size: small;
+}
+
 #close-button {
     position: absolute;
     top: 1rem;

@@ -7,7 +7,7 @@ export default function LargeCard({ title, subtitle, text, imgSrc }) {
             <h2>{subtitle}</h2>
             <div className="large-card">
                 <p>{text}</p>
-                {imgSrc && <img id="profile-picture" src={imgSrc} />}
+                {imgSrc && <img id="profile-picture" src={imgSrc} alt="A profile picture of Malin, looking straight into the camera"/>}
             </div>
         </>
     );

@@ -18,6 +18,8 @@
 
 .header-nav ul li .nav-link.active {
     color: var(--color-text-link-active);
+    text-underline-offset: 0.2rem;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {

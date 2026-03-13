@@ -1,12 +1,15 @@
 import HeaderNav from "../navs/HeaderNav";
 import './HeaderContainer.css';
-import logo from '../../assets/LogoDark.png';
+import LogoDark from '../../assets/LogoDark.png';
+import LogoLight from '../../assets/LogoLight.png';
 
-export default function HeaderContainer() {
+export default function HeaderContainer({ theme }) {
+    const logo = theme === 'dark' ? LogoDark : LogoLight;
+    
     return (
-        <div className="header-container">
-            <img className="header-logo" src={logo} alt="Logo"/>
+        <header className="header-container">
+            <img className="header-logo" src={logo} alt="The website's logo, a handwritten 'MH'"/>
             <HeaderNav />
-        </div>
+        </header>
     );
 }
