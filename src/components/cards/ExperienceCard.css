@@ -29,3 +29,34 @@
     padding-left: 1rem;
     font-style: italic;
 }
+
+@media print {
+    .experience-card h3 {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 2rem;
+        visibility: show;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    .experience-card {
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        padding: 0;
+        background-color: transparent;
+        color: black;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .experience-card ul {
+        margin-left: 0;
+        list-style: none;
+        margin-left: -3rem;
+    }
+    .experience-card blockquote {
+        font-size: 0.8rem;
+    }
+}

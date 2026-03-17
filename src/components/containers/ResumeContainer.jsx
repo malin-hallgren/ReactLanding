@@ -27,7 +27,7 @@ export default function ResumeContainer({ pageTitle }) {
 
     return (
         <>
-            <h3>{pageTitle}</h3>
+            <h3 id="resume-title">{pageTitle}</h3>
             <div className="resume-container">
                 <Card title="Experience" bulletPoints={experiences.map((exp, i) => ({ key: i, pointTitle: exp.title, subpoint: exp.description ?? '' }))} />
 

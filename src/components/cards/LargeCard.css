@@ -11,7 +11,8 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 3rem;;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
 }
 
 .large-card p {
@@ -48,4 +49,29 @@
         margin: 0 auto 2rem;
     }
     
+}
+
+@media print {
+    .large-card {
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        padding: 0;
+        background-color: transparent;
+        color: black;
+        grid-template-columns: 2fr 1fr;
+        margin-top: -5rem;
+        font-size: 0.8rem;
+    }
+
+    .large-card p {
+        white-space: pre-line;
+        text-align: left;
+    }
+
+    #profile-picture {
+        box-shadow: none;
+        width: 8rem;
+        height: auto;
+    }
 }

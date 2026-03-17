@@ -25,3 +25,9 @@
 .footer {
     margin-top: 2rem;
 }
+
+@media print {
+    .footer {
+        display: none;
+    }
+}

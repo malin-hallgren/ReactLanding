@@ -4,7 +4,7 @@ export default function ExperienceCard({ title, bulletPoints = [pointTitle, subp
     return (
         <>
             <div className="experience-card">
-                <h3>{title}</h3>
+                <h3 className='card-title'>{title}</h3>
                 <ul>
                     {bulletPoints.map((point, i) => (
                         <li key={i}>
