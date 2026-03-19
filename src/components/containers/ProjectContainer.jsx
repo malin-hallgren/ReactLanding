@@ -25,7 +25,7 @@ export default function ProjectContainer({ title, subtitle }) {
     }, []);
 
     return (
-        <>
+        <section>
             <h1>{title}</h1>
             <h2>{subtitle}</h2>
             <div className="project-container">
@@ -45,6 +45,6 @@ export default function ProjectContainer({ title, subtitle }) {
                     <ProjectModal project={selectedProject} onClose={closeModal} />
                 )}
             </div>
-        </>
+        </section>
     );
 }

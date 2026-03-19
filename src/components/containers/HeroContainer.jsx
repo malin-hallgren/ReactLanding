@@ -6,11 +6,9 @@ export default function HeroContainer({ theme, setTheme }) {
 
 
     return (
-        <>
-            <section className="hero-container">
-                <ThemeSwitch theme={theme} setTheme={setTheme} />
-                <HeroImg theme={theme}/>
-            </section>
-        </>
+        <section className="hero-container">
+            <ThemeSwitch theme={theme} setTheme={setTheme} />
+            <HeroImg theme={theme} />
+        </section>
     );
 }

@@ -28,7 +28,7 @@ export default function RepoContainer({ title, subtitle }) {
 
 
     return (
-        <>
+        <section>
             <h1>{title}</h1>
             <h2>{subtitle}</h2>
             <div className="repo-container">
@@ -46,6 +46,6 @@ export default function RepoContainer({ title, subtitle }) {
                     ))
                 )}
             </div>
-        </>
+        </section>
     );
 }

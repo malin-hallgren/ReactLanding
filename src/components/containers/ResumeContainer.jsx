@@ -26,7 +26,7 @@ export default function ResumeContainer({ pageTitle }) {
     }, []);
 
     return (
-        <>
+        <section>
             <h3 id="resume-title">{pageTitle}</h3>
             <div className="resume-container">
                 <Card title="Experience" bulletPoints={experiences.map((exp, i) => ({ key: i, pointTitle: exp.title, subpoint: exp.description ?? '' }))} />
@@ -35,7 +35,7 @@ export default function ResumeContainer({ pageTitle }) {
                 <Card title="Skills" bulletPoints={[{pointTitle:"Web Development"}, {pointTitle:"Software Development"}, {pointTitle:"Games and Interactive Design"}, {pointTitle:"Copy and Narrative Writing"}, {pointTitle:"Programming", subpoint:"C#, HTML, CSS, JavaScript/React, Python, SQL, C/C++"}]} />
                 <Card title="Releases & Projects" bulletPoints={projects.map((rel, i) => ({ key: i, pointTitle: rel.title, subpoint: '' }))} />
             </div>
-        </>
+        </section>
         
     );
 }

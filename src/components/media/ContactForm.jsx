@@ -6,7 +6,7 @@ export default function ContacForm() {
     const [isChecked, setIsChecked] = useState(false);
 
     return (
-        <>
+        <section>
             <form className='contact-form'>
                 <section className='contact-field'>
                     <label htmlFor="email">Email:</label>
@@ -25,6 +25,6 @@ export default function ContacForm() {
                 <input className={`submit ${isChecked ? 'enabled' : 'disabled'}`} disabled={!isChecked} type="submit" value="Submit" />
             </form>
 
-        </>
+        </section>
     );
 }

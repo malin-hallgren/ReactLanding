@@ -1,6 +1,7 @@
 import './HeaderNav.css';
 import { NavLink } from 'react-router-dom';
 
+// Not using header as the same is also used for footer
 export default function HeaderNav({ variant = 'header' }) {
     return (
         <nav className={`header-nav ${variant === 'footer' ? 'header-nav--footer' : ''}`}>
@@ -9,7 +10,7 @@ export default function HeaderNav({ variant = 'header' }) {
                     <NavLink
                         to="/"
                         end
-                        className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+                        className="nav-link"
                     >
                         Home
                     </NavLink>
@@ -17,7 +18,7 @@ export default function HeaderNav({ variant = 'header' }) {
                 <li>
                     <NavLink
                         to="/portfolio"
-                        className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+                        className="nav-link"
                     >
                         Portfolio
                     </NavLink>
@@ -25,7 +26,7 @@ export default function HeaderNav({ variant = 'header' }) {
                 <li>
                     <NavLink
                         to="/about"
-                        className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+                        className="nav-link"
                     >
                         About
                     </NavLink>
@@ -33,7 +34,7 @@ export default function HeaderNav({ variant = 'header' }) {
                 <li>
                     <NavLink
                         to="/contact"
-                        className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+                        className="nav-link"
                     >
                         Contact
                     </NavLink>

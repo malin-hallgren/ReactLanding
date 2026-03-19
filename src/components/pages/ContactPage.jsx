@@ -5,7 +5,7 @@ import FormContainer from '../containers/FormContainer';
 export default function Contact() {
     
     return (
-        <>
+        <article>
             <LargeCard
                 title="Reach out..."
                 subtitle=""
@@ -23,6 +23,6 @@ export default function Contact() {
                 }
             />
             <FormContainer />
-        </>
+        </article>
     );
 }

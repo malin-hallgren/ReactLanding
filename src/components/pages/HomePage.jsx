@@ -6,8 +6,9 @@ import ProfilePicture from '../../assets/Profile.jpg';
 export default function HomePage() {
 
     return (
-        <>
+        <article>
             {
+                <section>
                 <LargeCard
                     title="Malin Hallgren"
                     subtitle="-Fullstack Developer"
@@ -15,9 +16,12 @@ export default function HomePage() {
                     imgSrc={ProfilePicture}
                     altTxt={"A picture of Malin, they are looking straight into the camera"}
                 />
+                </section>
             }
-            {<ResumeContainer pageTitle="Resume" />}
-        </>
+            <section>
+                {<ResumeContainer pageTitle="Resume" />}
+            </section>
+        </article>
     );
 }
 

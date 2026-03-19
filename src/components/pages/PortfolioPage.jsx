@@ -3,10 +3,14 @@ import RepoContainer from '../containers/RepoContainer.jsx'
 
 export default function Portfolio() {
     return (
-        <>
-            <ProjectContainer title="Portfolio" subtitle="Releases" />
-            <RepoContainer title="" subtitle="Github Repos" />
-        </>
+        <article>
+            <section>
+                <ProjectContainer title="Portfolio" subtitle="Releases" />
+            </section>
+            <section>
+                <RepoContainer title="" subtitle="Github Repos" />
+            </section>
+        </article>
     )
 }
 
