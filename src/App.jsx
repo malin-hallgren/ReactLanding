@@ -8,7 +8,7 @@ import Home from './components/pages/HomePage.jsx';
 import Portfolio from './components/pages/PortfolioPage.jsx';
 import About from './components/pages/AboutPage.jsx';
 import Contact from './components/pages/ContactPage.jsx';
-import { Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 export default function App() {
 
@@ -23,22 +23,23 @@ export default function App() {
 
 
   return (
-    <div className="App">
-      <HeaderContainer theme={theme} />
-      <HeroContainer theme={theme} setTheme={setTheme} />
-      <main>
-        <Hello />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Home />} />
-        </Routes>
-      </main>
-
-      <Footer />
-    </div>
+    <HashRouter>
+      <div className="App">
+        <HeaderContainer theme={theme} />
+        <HeroContainer theme={theme} setTheme={setTheme} />
+        <main>
+          <Hello />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </HashRouter>
   )
 }
 
