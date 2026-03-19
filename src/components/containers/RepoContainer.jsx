@@ -13,7 +13,7 @@ export default function RepoContainer({ title, subtitle }) {
             fetch("https://api.github.com/users/malin-hallgren/repos")
                 .then(response => response.json())
                 .then(data => {
-                    setRepos(data.filter(repo => repo.language !== null || !repo.topics.map(topic => topic.toLowerCase()).includes("school-project")));
+                    setRepos(data.filter(repo => repo.language !== null && !repo.topics?.some(topic => topic.toLowerCase() === "school-project")));
                 })
                 .catch(error => {
                     console.error("Error fetching repositories:", error);
